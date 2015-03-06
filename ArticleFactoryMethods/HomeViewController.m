@@ -16,7 +16,7 @@
 @implementation HomeViewController
 
 - (IBAction)showDetailTapped:(id)sender {
-    DetailViewController *detailController = [[DetailViewController alloc] init];
+    DetailViewController *detailController = [DetailViewController controller];
     [self presentViewController:detailController animated:YES completion:nil];
 }
 

@@ -14,10 +14,8 @@
 
 @implementation DetailViewController
 
-- (instancetype)init {
-    // Spoiler alert: don't do this!
-    self = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"DetailViewController"];
-    return self;
++ (instancetype)controller {
+    return [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"DetailViewController"];
 }
 
 - (IBAction)closeTapped:(id)sender {
