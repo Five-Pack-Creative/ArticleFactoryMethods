@@ -14,6 +14,12 @@
 
 @implementation DetailViewController
 
+- (instancetype)init {
+    // Spoiler alert: don't do this!
+    self = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    return self;
+}
+
 - (IBAction)closeTapped:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
